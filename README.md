@@ -3,7 +3,7 @@ It generates a QR code to access the TOTP, and on the same page, the user must e
 
 ## Potential Vulnerabilities
 * Cross-Site Scripting (XSS): They could get access to the TOTP secret
-* Man-in-the-Middle (MitM): They could get access to the TOTP secret using the user WIFI (the most usual), VPN ... The user should use a secure DNS and VPN like cloudflare, but if the user isn't using any protection you should store the secret temporaly or cypher the session.
+* Man-in-the-Middle (MitM): They could get access to the TOTP secret using the user's WIFI (the most usual), an VPN that collects data ... The user should use a secure DNS and VPN like cloudflare, but if the user isn't using any protection you should store the secret temporaly or cypher the session.
 * Cross-site request forgery (CSRF): Protect it by validating the form.
 
 ## Requirement and Notes
